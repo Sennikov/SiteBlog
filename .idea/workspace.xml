@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f27f591-29a9-485d-93ea-9074dc2b6bfe" name="Изменения" comment="Начало">
+    <list default="true" id="3f27f591-29a9-485d-93ea-9074dc2b6bfe" name="Изменения" comment="Добавление gitignore">
+      <changelist_data name="Андрей" email="sennikov.ai@mail.ru" automatic="false" />
       <change beforePath="D:/SiteBlog/.gitignore" beforeDir="false" afterPath="D:/SiteBlog/.gitignore" afterDir="false" />
+      <change beforePath="D:/SiteBlog/.idea/workspace.xml" beforeDir="false" afterPath="D:/SiteBlog/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="D:/SiteBlog/SiteBlog.iml" beforeDir="false" afterPath="D:/SiteBlog/SiteBlog.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,7 +23,19 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="D:/SiteBlog" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="D:/SiteBlog" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory"><![CDATA[{
   "lastFilter": {
@@ -94,11 +109,53 @@
       <option name="project" value="LOCAL" />
       <updated>1784005298857</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Добавление gitignore">
+      <option name="closed" value="true" />
+      <created>1784005369400</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1784005369400</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Добавление gitignore">
+      <option name="closed" value="true" />
+      <created>1784005402898</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1784005402898</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Добавление gitignore">
+      <option name="closed" value="true" />
+      <created>1784005447885</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1784005447885</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Добавление gitignore">
+      <option name="closed" value="true" />
+      <created>1784005603777</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1784005603777</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Добавление gitignore">
+      <option name="closed" value="true" />
+      <created>1784005614097</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1784005614097</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Начало" />
-    <option name="LAST_COMMIT_MESSAGE" value="Начало" />
+    <MESSAGE value="Добавление gitignore" />
+    <MESSAGE value="Delete config directory" />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete config directory" />
   </component>
 </project>
