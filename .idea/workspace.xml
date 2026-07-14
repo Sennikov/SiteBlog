@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3f27f591-29a9-485d-93ea-9074dc2b6bfe" name="Изменения" comment="Начало">
       <change beforePath="D:/SiteBlog/.gitignore" beforeDir="false" afterPath="D:/SiteBlog/.gitignore" afterDir="false" />
-      <change beforePath="D:/SiteBlog/.idea/workspace.xml" beforeDir="false" afterPath="D:/SiteBlog/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +78,23 @@
       <option name="project" value="LOCAL" />
       <updated>1784005105483</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Начало">
+      <option name="closed" value="true" />
+      <created>1784005291252</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1784005291252</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Начало">
+      <option name="closed" value="true" />
+      <created>1784005298857</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1784005298857</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
