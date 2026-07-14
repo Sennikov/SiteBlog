@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f27f591-29a9-485d-93ea-9074dc2b6bfe" name="Изменения" comment="" />
+    <list default="true" id="3f27f591-29a9-485d-93ea-9074dc2b6bfe" name="Изменения" comment="Начало">
+      <change beforePath="D:/SiteBlog/.gitignore" beforeDir="false" afterPath="D:/SiteBlog/.gitignore" afterDir="false" />
+      <change beforePath="D:/SiteBlog/.idea/workspace.xml" beforeDir="false" afterPath="D:/SiteBlog/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +20,21 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="D:/SiteBlog" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Sennikov"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Sennikov/SiteBlog.git",
+    "accountId": "5a4633ca-0763-4c2c-ad3a-28694527e3ae"
+  }
+}]]></component>
   <component name="GradleModuleStateConfig" initialized="true" />
   <component name="OpenIdeProjectLocalState">
     <option name="firstOpen" value="false" />
@@ -34,6 +52,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "settings.editor.selected.configurable": "preferences.language.and.region"
@@ -52,6 +71,19 @@
       <option name="presentableId" value="Default" />
       <updated>1783999766457</updated>
     </task>
+    <task id="LOCAL-00001" summary="Начало">
+      <option name="closed" value="true" />
+      <created>1784005105483</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1784005105483</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Начало" />
+    <option name="LAST_COMMIT_MESSAGE" value="Начало" />
   </component>
 </project>
