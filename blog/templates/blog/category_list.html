@@ -1,0 +1,25 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block meta_title %}Категории{% endblock %}
+
+{% block content %}
+<h1 class="mb-4 fw-bold">Все категории</h1>
+<div class="row">
+    {% for category in categories %}
+    <div class="col-md-4 mb-3">
+        <div class="card h-100">
+            <div class="card-body">
+                <h2 class="h5">
+                    <a href="{{ category.get_absolute_url }}">{{ category.name }}</a>
+                </h2>
+                {% if category.description %}
+                <p class="text-muted small">{{ category.description }}</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    {% empty %}
+    <p>Категорий пока нет.</p>
+    {% endfor %}
+</div>
+{% endblock %}

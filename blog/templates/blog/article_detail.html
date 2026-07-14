@@ -1,0 +1,66 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block meta_title %}{{ article.meta_title }}{% endblock %}
+{% block meta_description %}{{ article.meta_description }}{% endblock %}
+{% block meta_keywords %}{{ article.meta_keywords }}{% endblock %}
+{% block og_type %}article{% endblock %}
+{% block og_image %}
+{% if article.image %}
+{{ request.scheme }}://{{ request.get_host }}{{ article.image.url }}
+{% else %}
+{{ block.super }}
+{% endif %}
+{% endblock %}
+{% block twitter_image %}
+{% if article.image %}
+{{ request.scheme }}://{{ request.get_host }}{{ article.image.url }}
+{% else %}
+{{ block.super }}
+{% endif %}
+{% endblock %}
+{% block canonical_url %}{{ request.scheme }}://{{ request.get_host }}{{ article.get_absolute_url }}{% endblock %}
+
+{% block breadcrumb %}
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+        <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <a href="{% url 'blog:article_list' %}" itemprop="item"><span itemprop="name">Главная</span></a>
+            <meta itemprop="position" content="1">
+        </li>
+        {% if article.category %}
+        <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <a href="{{ article.category.get_absolute_url }}" itemprop="item"><span itemprop="name">{{ article.category.name }}</span></a>
+            <meta itemprop="position" content="2">
+        </li>
+        {% endif %}
+        <li class="breadcrumb-item active" aria-current="page" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <span itemprop="name">{{ article.title }}</span>
+            <meta itemprop="position" content="{% if article.category %}3{% else %}2{% endif %}">
+        </li>
+    </ol>
+</nav>
+{% endblock %}
+
+{% block content %}
+<article itemscope itemtype="https://schema.org/Article" class="article-content">
+    <h1 itemprop="headline" class="fw-bold">{{ article.title }}</h1>
+    <div class="mb-3 text-muted">
+        <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+            <span itemprop="name">{{ article.author.username }}</span>
+        </span>
+        · <time datetime="{{ article.pub_date|date:'Y-m-d' }}" itemprop="datePublished">{{ article.pub_date|date:"d.m.Y" }}</time>
+        {% if article.updated != article.pub_date %}
+        (обновлено <time datetime="{{ article.updated|date:'Y-m-d' }}">{{ article.updated|date:"d.m.Y" }}</time>)
+        {% endif %}
+        {% if article.category %}
+        · Категория: <a href="{{ article.category.get_absolute_url }}">{{ article.category.name }}</a>
+        {% endif %}
+    </div>
+    {% if article.image %}
+    <img src="{{ article.image.url }}" class="img-fluid rounded mb-4" alt="{{ article.title }}" itemprop="image">
+    {% endif %}
+    <div itemprop="articleBody">
+        {{ article.content|safe }}
+    </div>
+</article>
+{% endblock %}

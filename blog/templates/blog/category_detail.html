@@ -1,0 +1,50 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block meta_title %}{{ category.meta_title|default:category.name }}{% endblock %}
+{% block meta_description %}{{ category.meta_description }}{% endblock %}
+{% block meta_keywords %}{{ category.meta_keywords }}{% endblock %}
+
+{% block breadcrumb %}
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="{% url 'blog:article_list' %}">Главная</a></li>
+        <li class="breadcrumb-item active" aria-current="page">{{ category.name }}</li>
+    </ol>
+</nav>
+{% endblock %}
+
+{% block content %}
+<h1 class="mb-3">{{ category.name }}</h1>
+{% if category.description %}
+<p class="lead">{{ category.description }}</p>
+{% endif %}
+<div class="row">
+    {% for article in articles %}
+    <div class="col-lg-4 col-md-6 mb-4">
+        <article class="card h-100">
+            {% if article.image %}
+            <img src="{{ article.image.url }}" class="card-img-top" alt="{{ article.title }}">
+            {% else %}
+            <div class="bg-secondary text-white d-flex align-items-center justify-content-center"
+                 style="height: 200px;">
+                <span class="fs-4">Нет изображения</span>
+            </div>
+            {% endif %}
+            <div class="card-body d-flex flex-column">
+                <div class="mb-2">
+                    <span class="category-badge">{{ category.name }}</span>
+                </div>
+                <h2 class="card-title h5">
+                    <a href="{{ article.get_absolute_url }}">{{ article.title }}</a>
+                </h2>
+                <p class="text-muted small mt-auto">
+                    {{ article.pub_date|date:"d.m.Y" }} · {{ article.author.username }}
+                </p>
+            </div>
+        </article>
+    </div>
+    {% empty %}
+    <p>В этой категории пока нет статей.</p>
+    {% endfor %}
+</div>
+{% endblock %}

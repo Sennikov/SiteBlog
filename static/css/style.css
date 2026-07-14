@@ -1,0 +1,65 @@
+/* static/css/style.css */
+body {
+    background-color: #f7f7f7;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+    background: #fff;
+}
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+.card-body {
+    padding: 1.5rem;
+}
+.card-title a {
+    color: #2c3e50;
+    text-decoration: none;
+    font-weight: 700;
+}
+.card-title a:hover {
+    color: #007bff;
+}
+.text-muted.small {
+    font-size: 0.85rem;
+}
+.article-content {
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+.article-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.breadcrumb {
+    background: none;
+    padding: 0.75rem 0;
+}
+.category-badge {
+    background-color: #e9ecef;
+    color: #495057;
+    padding: 0.2rem 0.6rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+.category-badge:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+@media (max-width: 768px) {
+    .card-img-top {
+        height: 180px;
+    }
+}
